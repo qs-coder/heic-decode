@@ -16,7 +16,7 @@ describe('heic-decode (default wasm bundle)', () => {
 });
 
 describe('heic-decode (js)', () => {
-  const libheif = require('libheif-js');
+  const libheif = require('@qs-coder/libheif-js');
   const { one, all } = require('../lib')(libheif);
   const decode = one;
   decode.all = all;

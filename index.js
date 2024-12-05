@@ -1,4 +1,4 @@
-const libheif = require('libheif-js/wasm-bundle');
+const libheif = require('@qs-coder/libheif-js/wasm-bundle');
 
 const { one, all } = require('./lib.js')(libheif);
 
