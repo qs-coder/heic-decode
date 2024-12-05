@@ -6,16 +6,16 @@
 [![npm-downloads][npm-downloads.svg]][npm.link]
 [![npm-version][npm-version.svg]][npm.link]
 
-[ci.svg]: https://github.com/catdad-experiments/heic-decode/actions/workflows/ci.yml/badge.svg
-[ci.link]: https://github.com/catdad-experiments/heic-decode/actions/workflows/ci.yml
-[npm-downloads.svg]: https://img.shields.io/npm/dm/heic-decode.svg
-[npm.link]: https://www.npmjs.com/package/heic-decode
-[npm-version.svg]: https://img.shields.io/npm/v/heic-decode.svg
+[ci.svg]: https://github.com/qs-coder/heic-decode/actions/workflows/ci.yml/badge.svg
+[ci.link]: https://github.com/qs-coder/heic-decode/actions/workflows/ci.yml
+[npm-downloads.svg]: https://img.shields.io/npm/dm/@qs-coder/heic-decode.svg
+[npm.link]: https://www.npmjs.com/package/@qs-coder/heic-decode
+[npm-version.svg]: https://img.shields.io/npm/v/@qs-coder/heic-decode.svg
 
 ## Install
 
 ```bash
-npm install heic-decode
+npm install @qs-coder/heic-decode
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ Decode the main image in the file:
 ```javascript
 const fs = require('fs');
 const { promisify } = require('util');
-const decode = require('heic-decode');
+const decode = require('@qs-coder/heic-decode');
 
 (async () => {
   const buffer = await promisify(fs.readFile)('/path/to/my/image.heic');
@@ -42,7 +42,7 @@ Decode all images in the file:
 ```javascript
 const fs = require('fs');
 const { promisify } = require('util');
-const decode = require('heic-decode');
+const decode = require('@qs-coder/heic-decode');
 
 (async () => {
   const buffer = await promisify(fs.readFile)('/path/to/my/multi-image.heic');
@@ -66,6 +66,6 @@ _Note that while the decoder returns a Promise, it does the majority of the work
 
 ## Related
 
-* [heic-cli](https://github.com/catdad-experiments/heic-cli) - convert heic/heif images to jpeg or png from the command line
-* [heic-convert](https://github.com/catdad-experiments/heic-convert) - convert heic/heif images to jpeg and png
-* [libheif-js](https://github.com/catdad-experiments/libheif-js) - libheif as a pure-javascript npm module
+* [heic-cli](https://github.com/qs-coder/heic-cli) - convert heic/heif images to jpeg or png from the command line
+* [heic-convert](https://github.com/qs-coder/heic-convert) - convert heic/heif images to jpeg and png
+* [libheif-js](https://github.com/qs-coder/libheif-js) - libheif as a pure-javascript npm module
